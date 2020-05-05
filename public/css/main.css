@@ -95,10 +95,12 @@ header {
     height: 100%;
     margin: auto;
     background: rgba(0, 0, 0, 0);
+    visibility: hidden;
 }
 
 .nav-list-active {
     background: rgba(0, 0, 0, 0.9);
+    visibility: initial;
 }
 
 .nav-mobile-nav_link {

@@ -29,86 +29,78 @@ header {
 
 .nav_item {
     display: inline-block;
+    margin: 30px;
 }
 
 .nav_link {
     text-decoration: none;
     color: #FAFAFA;
-    font-size: 18px;
+    font-size: 35px;
     letter-spacing: 3px;
     padding: 0px 20px;
     transition: all 0.3s ease 0s;
+    opacity: 0;
 }
 
 .nav_link:hover {
     color: #9E9E9E;
 }
 
-.notransition {
-    transition: none;
+/* HAMBURGER */
+.hamburger-menu {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px) {
+.line {
+    width: 100%;
+    height: 2.5px;
+    background: #FAFAFA;
+    transition: 0.4s;
+}
 
-    /* HAMBURGER */
-    .hamburger-menu {
-        position: fixed;
-        width: 30px;
-        height: 30px;
-        top: 30px;
-        right: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        cursor: pointer;
-    }
+.change .line-1 {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
 
-    .line {
-        width: 100%;
-        height: 2.5px;
-        background: #FAFAFA;
-        transition: 0.4s;
-    }
+.change .line-2 {
+    opacity: 0;
+}
 
-    .change .line-1 {
-        transform: rotate(-45deg) translate(-8px, 6px);
-    }
-
-    .change .line-2 {
-        opacity: 0;
-    }
-
-    .change .line-3 {
-        transform: rotate(45deg) translate(-8px, -6px);
-    }
+.change .line-3 {
+    transform: rotate(45deg) translate(-8px, -6px);
+}
 
 
-    /*On clicking the hamburger*/
-    .nav_list {
-        transition: all 0.5s ease;
-        -webkit-transition: all ease 0.5s;
-    }
+/*On clicking the hamburger*/
+.nav_list {
+    transition: all 0.5s ease;
+    -webkit-transition: all ease 0.5s;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0);
+}
 
-    .nav-mobile {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        background: rgba(0, 0, 0, 0.9);
-    }
+.nav-list-active {
+    background: rgba(0, 0, 0, 0.9);
+}
 
-    .nav-mobile-nav_link {
-        font-size: 35px;
-    }
-
-    .nav-mobile-nav_item {
-        margin: 30px;
-    }
+.nav-mobile-nav_link {
+    opacity: 1;
 }

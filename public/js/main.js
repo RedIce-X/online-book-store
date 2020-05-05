@@ -6,7 +6,7 @@ const nav_items = [...document.querySelectorAll(".nav_item")];
 hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("change");
 
-    nav_list.classList.toggle("nav-mobile");
+    nav_list.classList.toggle("nav-list-active");
 
     nav_links.forEach(function (element) {
         element.classList.toggle("nav-mobile-nav_link");

@@ -1,0 +1,41 @@
+<%- include('../includes/header.ejs') %>
+<link rel="stylesheet" href="/css/forms.css">
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <div class="form-container">
+            <div class="form-title">REGISTER</div>
+            <form class="register-form">
+                <div id="names">
+                    <div id="form-register-first-name" class="form-control">
+                        <label id="register-fn-label" for="email">First Name</label>
+                        <input id="register-fn-input" type="text">
+                    </div>
+                    <div id="form-register-last-name" class="form-control">
+                        <label id="register-ln-label" for="password">Last Name</label>
+                        <input id="register-ln-input" type="password">
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="password">Email</label>
+                    <input type="password">
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password">
+                </div>
+                <div class="form-control">
+                    <label for="password">Confirm Password</label>
+                    <input type="password">
+                </div>
+                <button class="form-btn" type="submit">Register</button>
+                <div class="form-switch">
+                    <a href="/login">Already have an account? Login</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <%- include('../includes/footer.ejs') %>

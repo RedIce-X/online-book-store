@@ -15,7 +15,15 @@ app.use(express.urlencoded({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
+    res.redirect("/login");
+});
+
+app.get("/login", (req, res) => {
     res.render("auth/login");
+});
+
+app.get("/register", (req, res) => {
+    res.render("auth/register");
 });
 
 const port = process.env.PORT || 3000;

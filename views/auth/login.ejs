@@ -1,11 +1,11 @@
 <%- include('../includes/header.ejs') %>
-<link rel="stylesheet" href="/css/login.css">
+<link rel="stylesheet" href="/css/forms.css">
 </head>
 
 <body>
     <%- include('../includes/navigation.ejs') %>
     <main>
-        <div class="login-container">
+        <div class="form-container">
             <div class="form-title">LOGIN</div>
             <form class="login-form">
                 <div class="form-control">
@@ -16,9 +16,9 @@
                     <label for="password">Password</label>
                     <input type="password">
                 </div>
-                <button class="btn" type="submit">LOGIN</button>
+                <button class="form-btn" type="submit">LOGIN</button>
                 <div class="form-switch">
-                    <a href="#">Don't have an account? Register</a>
+                    <a href="/register">Don't have an account? Register</a>
                 </div>
             </form>
         </div>

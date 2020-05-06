@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-.login-container {
+.form-container {
     display: grid;
     margin: 1.25rem auto;
     color: #EEEEEE;
@@ -57,7 +57,7 @@
     outline: none;
 }
 
-.login-form button {
+.form-btn {
     font-size: 1.0625rem;
     margin-top: 2.5rem;
     height: 40px;
@@ -70,13 +70,27 @@
     cursor: pointer;
 }
 
-.login-form button:hover {
+.form-btn:hover {
     border: 1px solid #dd1b06;
     background: #dd1b06;
 }
 
-.login-form button:focus {
+.form-btn:focus {
     outline: none
+}
+
+#names {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+#register-fn-input,
+#register-ln-input {
+    width: 170px;
+}
+
+#form-register-last-name {
+    margin-left: 30px
 }
 
 @media only screen and (max-width: 480px) {
@@ -84,7 +98,26 @@
         width: 80%;
     }
 
+    .register-form {
+        width: 80%;
+    }
+
     .form-control input {
         width: 100%;
     }
+
+    /* First Name, Last Name */
+    #names {
+        display: block;
+    }
+
+    #register-fn-input,
+    #register-ln-input {
+        width: 100%;
+    }
+
+    #form-register-last-name {
+        margin-left: 0;
+    }
+
 }

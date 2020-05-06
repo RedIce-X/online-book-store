@@ -1,7 +1,7 @@
-const hamburger = document.querySelector(".hamburger-menu");
-const nav_list = document.querySelector(".nav_list");
-const nav_links = [...document.querySelectorAll(".nav_link")];
-const nav_items = [...document.querySelectorAll(".nav_item")];
+const hamburger = document.querySelector(".hamburger-icon");
+const nav_list = document.querySelector(".nav-list");
+const nav_links = [...document.querySelectorAll(".nav-link")];
+const nav_items = [...document.querySelectorAll(".nav-item")];
 
 hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("change");
@@ -9,9 +9,6 @@ hamburger.addEventListener("click", function () {
     nav_list.classList.toggle("nav-list-active");
 
     nav_links.forEach(function (element) {
-        element.classList.toggle("nav-mobile-nav_link");
-    });
-    nav_items.forEach(function (element) {
-        element.classList.toggle("nav-mobile-nav_item");
+        element.classList.toggle("nav-link-active");
     });
 });

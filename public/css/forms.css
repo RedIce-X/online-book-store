@@ -79,6 +79,32 @@
     outline: none
 }
 
+.form-control {
+    position: relative;
+}
+
+.form-control i {
+    position: absolute;
+    top: 54px;
+    right: 20px;
+    font-size: 20px;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.eye-icon-slash {
+    position: absolute;
+    background: white;
+    width: 28px;
+    height: 2.5px;
+    top: 62px;
+    right: 18px;
+    border-radius: 1px;
+    transform: rotate(35deg);
+    opacity: 0.85;
+    visibility: hidden;
+}
+
 #names {
     display: grid;
     grid-template-columns: 2fr 2fr;

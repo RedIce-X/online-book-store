@@ -22,13 +22,21 @@
                     <label for="password">Email</label>
                     <input type="password">
                 </div>
-                <div class="form-control">
+                <div class="form-control pwd">
                     <label for="password">Password</label>
-                    <input type="password">
+                    <input class="pwd-textbox" type="password">
+                    <div>
+                        <i class="fas fa-eye"></i>
+                        <div class="eye-icon-slash"></div>
+                    </div>
                 </div>
-                <div class="form-control">
+                <div class="form-control pwd">
                     <label for="password">Confirm Password</label>
-                    <input type="password">
+                    <input class="pwd-textbox" type="password">
+                    <div>
+                        <i class="fas fa-eye"></i>
+                        <div class="eye-icon-slash"></div>
+                    </div>
                 </div>
                 <button class="form-btn" type="submit">Register</button>
                 <div class="form-switch">
@@ -37,5 +45,6 @@
             </form>
         </div>
     </main>
+    <script src="/js/forms.js"></script>
 
     <%- include('../includes/footer.ejs') %>
